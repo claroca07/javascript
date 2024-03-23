@@ -11,59 +11,35 @@
     <header>
     
     <div class="botao">
-        <p>Botão 1</p>
+        <p>Mexe na Véia</p>
     </div>
-
-    <div class="botao">
-        <p>Botão 1</p>
-    </div>
-
-    <div class="botao">
-        <p>Botão 1</p>
-    </div>
-    
 
     </header>
 
     <main>
     
     <div class="box"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
 
     </main>
 
     <script>
         let botao = document.querySelector(".botao");
         let box = document.querySelector(".box");
-        let box2 = document.querySelector("box2")
-        let box3 = document.querySelector("box3")
 
         let oculto = true;
 
-        botao.addEventListener('click', () =>{
-            if (oculto){
-                box2.classList.remove("veia")
-                oculto = false;
-            }
-            else{
-                box2.classList.add("veia")
-                oculto = true;
-            }
-        });
-
-        // botao.addEventListener("click", () => {
-        //     if(oculto){
-        //     // box.classList.remove("box-inativo");
-        //     box.classList.remove("aumentar");
-        //     oculto = false;
-        // }
-        // else{
-        //     // box.classList.add("box-inativo")
-        //     box.classList.add("aumentar");
-        //     oculto = true;
-        // }
-        // } );
+        botao.addEventListener("click", () => {
+            if(oculto){
+            // box.classList.remove("box-inativo");
+            box.classList.remove("aumentar");
+            oculto = false;
+        }
+        else{
+            // box.classList.add("box-inativo")
+            box.classList.add("aumentar");
+            oculto = true;
+        }
+        } );
 
 
 

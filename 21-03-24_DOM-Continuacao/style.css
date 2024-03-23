@@ -15,9 +15,15 @@ header{
     border-bottom: 10px rgb(98, 16, 98) solid;
     border-top: 10px rgb(98, 16, 98) solid;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
 .botao{
     border: 4px rgb(220, 121, 175) solid;
-    width: 100px;
+    width: 120px;
     height: 70px;
     background: pink;
     color: white;
@@ -30,35 +36,17 @@ header{
 }
 .box{
     margin: 10px;
-    width: 100px;
-    height: 100px;
-    background: purple;
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/veia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.box2{
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    background: purple;
-}
-.box3{
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    background: purple;
-}
+
 .box-inativo{
     display: none;
 }
 .aumentar{
-    width: 600px;
-    height: 600px;
-}
-
-.veia{
-    background-image: url(/img/veia.jpg);
-    width: 100px;
-    height: 100px;
-}
-.gato{
-    background-image: url(/img/gatinho_mafioso.jpg);
+    width: 300px;
+    height: 300px;
 }
