@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação do DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    
+    <div class="botao">
+        <p>Botão 1</p>
+    </div>
+
+    <div class="botao">
+        <p>Botão 1</p>
+    </div>
+
+    <div class="botao">
+        <p>Botão 1</p>
+    </div>
+    
+
+    </header>
+
+    <main>
+    
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    </main>
+
+    <script>
+        let botao = document.querySelector(".botao");
+        let box = document.querySelector(".box");
+        let box2 = document.querySelector("box2")
+        let box3 = document.querySelector("box3")
+
+        let oculto = true;
+
+        botao.addEventListener('click', () =>{
+            if (oculto){
+                box2.classList.remove("veia")
+                oculto = false;
+            }
+            else{
+                box2.classList.add("veia")
+                oculto = true;
+            }
+        });
+
+        // botao.addEventListener("click", () => {
+        //     if(oculto){
+        //     // box.classList.remove("box-inativo");
+        //     box.classList.remove("aumentar");
+        //     oculto = false;
+        // }
+        // else{
+        //     // box.classList.add("box-inativo")
+        //     box.classList.add("aumentar");
+        //     oculto = true;
+        // }
+        // } );
+
+
+
+        // função de callback, onde a funcao é "criada" e executada ao mesmo tempo, utilizada dentro de eventos. Não pode ser utilizada novamente em outro momento do código
+        // se caso vc precisar fazer um codigo muito extenso, chame uma outra funcao dentro da função de callback EX: () => { funcaoDesejada(); }
+
+    </script>
+
+</body>
+</html>

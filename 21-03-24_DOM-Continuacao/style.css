@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 48, 68) ;
+}
+header{
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px rgb(98, 16, 98) solid;
+    border-top: 10px rgb(98, 16, 98) solid;
+}
+.botao{
+    border: 4px rgb(220, 121, 175) solid;
+    width: 100px;
+    height: 70px;
+    background: pink;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.box{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+.box2{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+.box3{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+.box-inativo{
+    display: none;
+}
+.aumentar{
+    width: 600px;
+    height: 600px;
+}
+
+.veia{
+    background-image: url(/img/veia.jpg);
+    width: 100px;
+    height: 100px;
+}
+.gato{
+    background-image: url(/img/gatinho_mafioso.jpg);
+}
