@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>04/04/2024 -  Manipulação do DOM</title>
+</head>
+<body>
+    
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+    <div class="red">
+    </div>
+
+<script>
+    let red= document.querySelectorAll('.red');
+    let size = '300px'
+    console.log (red);
+
+    red.forEach((element, index) => {
+        //forEach = para cada
+
+        element.style.marginBottom = '10px';
+        element.style.width = size;
+        element.style.height = size;
+
+        if(index%2==0){
+        element.style.backgroundColor = 'red';
+            element.addEventListener('mouseover', () => {
+                element.style.backgroundColor = 'blue';
+                element.style.width = '500px'
+            });
+            element.addEventListener('mouseout', () => {
+                element.style.width = size
+            });
+        }
+        else{
+        element.style.backgroundColor = 'blue';
+            element.addEventListener('mouseover', () => {
+                element.style.backgroundColor = 'red';
+                element.style.width = '500px'
+            });
+            element.addEventListener('mouseout', () => {
+                element.style.width = size
+            });
+        }
+                element.style.display = 'flex'
+                element.style.borderRadius = '30px'
+                element.style.transition = 'all 1s'
+                element.style.justifyContent = 'center'
+                element.style.alignItems = 'center'
+                
+                element.innerHTML = `<marquee><h1>${index}</h1></marquee>`;
+                
+    
+    });
+
+
+</script>
+
+</body>
+</html>
